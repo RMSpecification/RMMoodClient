@@ -76,8 +76,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\app.module.js" />
-    <Content Include="app\main.js" />
     <Content Include="Index.html" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />

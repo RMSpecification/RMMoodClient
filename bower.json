@@ -1,0 +1,15 @@
+{
+  "name": "mood-wordcloud-client",
+  "homepage": "https://github.com/pikape/mood-wordcloud-client",
+  "authors": [
+    "Katarina Peltola <katarina.peltola@redmind.se>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
