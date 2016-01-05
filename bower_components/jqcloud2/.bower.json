@@ -49,7 +49,6 @@
     "commit": "36338f7760bef5861cfc253691ad64d34ec2074a"
   },
   "_source": "git://github.com/mistic100/jQCloud.git",
-  "_target": "~2.0.1",
-  "_originalSource": "jqcloud2",
-  "_direct": true
+  "_target": "2.x",
+  "_originalSource": "jqcloud2"
 }
