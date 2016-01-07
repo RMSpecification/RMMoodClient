@@ -32,26 +32,21 @@
   ]);
 
   app.controller('controller', function ($scope, $http) {
-      //$scope.moods = null;
-      $http.get('http://localhost:53154//api/moods').
+      $http.get('http://localhost:53154//api/moods').//Ooops, this will stop working if URL (or port) changes!
           success(function (response) {
               $scope.moods = response;
               $scope.words = [];
 
-              var happycounter = $scope.moods[0].Counter;              
+              var happycounter = $scope.moods[0].Counter; //Ooops, this will stop working if database changes!             
               for (var i = 0; i < happycounter; i++) {
-                  $scope.words.push({ text: "Happy", weight: i });
+                  $scope.words.push({ text: $scope.moods[0].Description, weight: i });
               }
 
-              var sadcounter = $scope.moods[1].Counter;
+              var sadcounter = $scope.moods[1].Counter;//Ooops, this will stop working if database changes!
               for (var i = 0; i < sadcounter; i++) {
-                  $scope.words.push({ text: "Sad", weight: i });
+                  $scope.words.push({ text: $scope.moods[1].Description, weight: i });
               }
           });
-
-    $scope.update = function() {
-      $scope.words.splice(-5);
-    };
   });
     </script>
 </body>
