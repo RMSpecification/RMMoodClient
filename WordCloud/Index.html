@@ -42,9 +42,14 @@
                   $scope.words.push({ text: $scope.moods[0].Description, weight: i });
               }
 
-              var sadcounter = $scope.moods[1].Counter;//Ooops, this will stop working if database changes!
-              for (var i = 0; i < sadcounter; i++) {
+              var okcounter = $scope.moods[1].Counter; //Ooops, this will stop working if database changes!             
+              for (var i = 0; i < okcounter; i++) {
                   $scope.words.push({ text: $scope.moods[1].Description, weight: i });
+              }
+
+              var sadcounter = $scope.moods[2].Counter;//Ooops, this will stop working if database changes!
+              for (var i = 0; i < sadcounter; i++) {
+                  $scope.words.push({ text: $scope.moods[2].Description, weight: i });
               }
           });
   });
